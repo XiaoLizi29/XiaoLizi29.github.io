@@ -16,13 +16,14 @@
     var u = navigator.userAgent;
     console.log(u)
     if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {
-        // alert("安卓手机");
-        // window.location.href = "http://www.namodi.cn/namodi-v1.3.2.apk";
+        if (u.toLowerCase().match(/MicroMessenger/i) == "micromessenger") {
+            $('#title').text('微信公众')
+            return
+        }
         $('#title').text('安卓')
+        // window.location.href = "http://www.namodi.cn/namodi-v1.3.2.apk";
     } else if (u.indexOf('iPhone') > -1) {
         // window.location.href = "https://apps.apple.com/cn/app/%E5%8D%97%E6%97%A0%E5%9C%B0/id1494131189";
         $('#title').text('苹果')
-    } else if (u.toLowerCase().match(/MicroMessenger/i) == "micromessenger") {
-        $('#title').text('微信公众')
     }
 </script>
