@@ -1,1 +1,23 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=favicon.ico><title>take-money-rules</title><link href=js/chunk-0235bc68.ed360373.js rel=prefetch><link href=js/chunk-2d0e19c3.bafe831d.js rel=prefetch><link href=js/app.805eafc9.js rel=preload as=script><link href=js/chunk-vendors.7c919912.js rel=preload as=script></head><body><noscript><strong>We're sorry but take-money-rules doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=js/chunk-vendors.7c919912.js></script><script src=js/app.805eafc9.js></script></body></html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+</body>
+</html>
+<script>
+    var u = navigator.userAgent;
+    console.log(u)
+    if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {
+        // alert("安卓手机");
+         window.location.href = "http://www.namodi.cn/namodi-v1.3.2.apk";
+    } else if (u.indexOf('iPhone') > -1) {
+         window.location.href = "https://apps.apple.com/cn/app/%E5%8D%97%E6%97%A0%E5%9C%B0/id1494131189";
+        // alert("苹果手机");
+    }else if(u.toLowerCase().match(/MicroMessenger/i)=="micromessenger"){
+        alert('微信公众号')
+    }
+</script>
